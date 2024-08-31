@@ -23,8 +23,9 @@ public:
     }
 
     void winner () {
-        std::cout << P_Name << "=-=-=-=-=-=-=-=-=-=-=" << std::endl;
+        system("cls");
         std::cout << P_Name << " is The Winner !!." << std::endl;
+        std::cout << "=-=-=-=-=-=-=-=-=-=-=" << std::endl;
     }
 };
 

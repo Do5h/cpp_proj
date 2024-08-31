@@ -8,17 +8,21 @@ int main () {
 
     P_1.set_PInfo('X');
     P_2.set_PInfo('O');
- 
 
     while (1) {
         system("cls");
         P_1.get_P_Info();
         G.Print_Pord();
         G.take_Input(P_1.P_ID);
-        if (G.check_win(P_1)) {G.Print_Pord(); break; }
+        if (G.check_win(P_1)) {G.Print_Pord(); break;} 
         i++;
 
-        if(i == 9) {std::cout << "* Drow *" << std::endl; break;}
+        if(i == 9) { //Check if Drow
+            system("cls"); 
+            std::cout << "* Drow *" << std::endl; 
+            G.Print_Pord(); 
+            break;
+        }
 
         system("cls");
         P_2.get_P_Info();

@@ -5,6 +5,7 @@ class Game {
         char XO[3][3] = {'1','2','3','4','5','6','7','8','9'};
     public:
     Player P;
+    
     void Print_Pord () {
         for (int i = 0; i < 3; i++) {
             std::cout << XO[i][0] << "|" << XO[i][1] << "|" << XO[i][2] << std::endl;
